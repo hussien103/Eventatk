@@ -3,26 +3,26 @@
     {
       "id": "1",
       "title": {
-        "en": "Summer Music Festival 2025",
-        "ar": "مهرجان الموسيقى الصيفي 2025"
+        "en": "Winter Music Festival 2025",
+        "ar": "منتظر ترجمة جوجل"
       },
       "description": {
-        "en": "Experience the biggest summer festival with top artists, food trucks, and unforgettable vibes. Multiple stages featuring electronic, pop, and rock music.",
-        "ar": "استمتع بأكبر مهرجان صيفي مع أفضل الفنانين وعربات الطعام وأجواء لا تُنسى. يضم عدة مسارح تقدم الموسيقى الإلكترونية والبوب والروك."
+        "en": "Summer Music Festival 2025 Summer Music Festival 2025Summer Music Festival 2025 Summer Music Festival 2025",
+        "ar": "منتظر ترجمة جوجل"
+      },
+      "location": {
+        "en": "Cairo/Egypt",
+        "ar": "منتظر ترجمة جوجل"
+      },
+      "category": {
+        "en": "Music/Party",
+        "ar": "منتظر ترجمة جوجل"
       },
       "date": "2025-07-15",
       "time": "14:00",
-      "location": {
-        "en": "Central Park, New York",
-        "ar": "سنترال بارك، نيويورك"
-      },
       "price": 89.99,
       "capacity": 5000,
-      "availableTickets": 4998,
-      "category": {
-        "en": "Music",
-        "ar": "موسيقى"
-      },
+      "availableTickets": 5000,
       "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1200"
     },
     {
@@ -43,7 +43,7 @@
       },
       "price": 65,
       "capacity": 8000,
-      "availableTickets": 8000,
+      "availableTickets": 7999,
       "category": {
         "en": "Food & Drink",
         "ar": "طعام ومشروبات"
@@ -68,7 +68,7 @@
       },
       "price": 35,
       "capacity": 10000,
-      "availableTickets": 10000,
+      "availableTickets": 9999,
       "category": {
         "en": "Sports",
         "ar": "رياضة"
@@ -121,10 +121,26 @@
     {
       "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
       "userEmail": "khalifahussien08@gmail.com",
-      "eventId": null,
+      "eventId": "1",
       "paymentStatus": "paid",
       "createdAt": "2026-05-08T16:29:24.547Z",
       "id": "_HhuUKMZyL0"
+    },
+    {
+      "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
+      "userEmail": "khalifahussien08@gmail.com",
+      "eventId": "4",
+      "paymentStatus": "paid",
+      "createdAt": "2026-05-08T21:55:50.498Z",
+      "id": "zC31bMnKcms"
+    },
+    {
+      "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
+      "userEmail": "khalifahussien08@gmail.com",
+      "eventId": "5",
+      "paymentStatus": "paid",
+      "createdAt": "2026-05-08T22:10:21.633Z",
+      "id": "2b9Nl1ov7K0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

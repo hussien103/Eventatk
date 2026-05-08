@@ -32,7 +32,6 @@ export const updateEventAction = createAsyncThunk(
     "events/updateEvent",
     async(event) => {
 
-
         const res = await axios.put(
             `http://localhost:3000/events/${event.id}`,
             event

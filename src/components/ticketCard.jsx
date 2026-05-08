@@ -62,13 +62,7 @@ const TicketCard = ({ ticket }) => {
             </span>
           </p>
 
-          <p>
-            📅 Purchased:
-            <span className="text-white">
-              {" "}
-              {new Date(ticket.purchaseDate).toLocaleDateString()}
-            </span>
-          </p>
+         
 
           {event && (
             <>

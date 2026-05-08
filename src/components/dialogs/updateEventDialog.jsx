@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -12,33 +17,36 @@ const UpdateEventDialog = ({ open, onClose, event }) => {
   const [form, setForm] = useState({
     title: "",
     description: "",
+    location: "",
+    category: "",
     date: "",
     time: "",
-    location: "",
     price: "",
     capacity: "",
-    category: "",
     image: "",
   })
 
   useEffect(() => {
     if (event) {
       setForm({
-        title: event.title || "",
-        description: event.description || "",
+        title: event.title?.en || "",
+        description: event.description?.en || "",
+        location: event.location?.en || "",
+        category: event.category?.en || "",
         date: event.date || "",
         time: event.time || "",
-        location: event.location || "",
         price: event.price || "",
         capacity: event.capacity || "",
-        category: event.category || "",
         image: event.image || "",
       })
     }
   }, [event])
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    })
   }
 
   const handleSubmit = () => {
@@ -47,10 +55,33 @@ const UpdateEventDialog = ({ open, onClose, event }) => {
     dispatch(
       updateEventAction({
         id: event.id,
-        ...form,
+
+        title: {
+          en: form.title,
+          ar: event.title?.ar || "منتظر ترجمة جوجل",
+        },
+
+        description: {
+          en: form.description,
+          ar: event.description?.ar || "منتظر ترجمة جوجل",
+        },
+
+        location: {
+          en: form.location,
+          ar: event.location?.ar || "منتظر ترجمة جوجل",
+        },
+
+        category: {
+          en: form.category,
+          ar: event.category?.ar || "منتظر ترجمة جوجل",
+        },
+
+        date: form.date,
+        time: form.time,
         price: Number(form.price),
         capacity: Number(form.capacity),
         availableTickets: Number(form.capacity),
+        image: form.image,
       })
     )
 
@@ -65,20 +96,69 @@ const UpdateEventDialog = ({ open, onClose, event }) => {
         </DialogHeader>
 
         <div className="grid grid-cols-2 gap-3 mt-4">
-          <Input name="title" value={form.title} onChange={handleChange} />
-          <Input name="date" type="date" value={form.date} onChange={handleChange} />
+          <Input
+            name="title"
+            placeholder="Title"
+            value={form.title}
+            onChange={handleChange}
+          />
 
-          <Input name="time" type="time" value={form.time} onChange={handleChange} />
-          <Input name="location" value={form.location} onChange={handleChange} />
+          <Input
+            name="date"
+            type="date"
+            value={form.date}
+            onChange={handleChange}
+          />
 
-          <Input name="price" type="number" value={form.price} onChange={handleChange} />
-          <Input name="capacity" type="number" value={form.capacity} onChange={handleChange} />
+          <Input
+            name="time"
+            type="time"
+            value={form.time}
+            onChange={handleChange}
+          />
 
-          <Input name="category" value={form.category} onChange={handleChange} className="col-span-2" />
-          <Input name="image" value={form.image} onChange={handleChange} className="col-span-2" />
+          <Input
+            name="location"
+            placeholder="Location"
+            value={form.location}
+            onChange={handleChange}
+          />
+
+          <Input
+            name="price"
+            type="number"
+            placeholder="Price"
+            value={form.price}
+            onChange={handleChange}
+          />
+
+          <Input
+            name="capacity"
+            type="number"
+            placeholder="Capacity"
+            value={form.capacity}
+            onChange={handleChange}
+          />
+
+          <Input
+            name="category"
+            placeholder="Category"
+            value={form.category}
+            onChange={handleChange}
+            className="col-span-2"
+          />
+
+          <Input
+            name="image"
+            placeholder="Image URL"
+            value={form.image}
+            onChange={handleChange}
+            className="col-span-2"
+          />
 
           <Textarea
             name="description"
+            placeholder="Description"
             value={form.description}
             onChange={handleChange}
             className="col-span-2"

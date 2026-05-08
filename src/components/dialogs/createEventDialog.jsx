@@ -12,8 +12,8 @@ const CreateEventDialog = ({ open, onClose }) => {
   const dispatch = useDispatch()
 
   const [form, setForm] = useState({
-    title: { en: "" },
-    description:{en: ""},
+    title: "",
+    description:"",
     date: "",
     time: "",
     location: "",
