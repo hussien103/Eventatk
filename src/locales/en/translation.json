@@ -1,0 +1,14 @@
+{
+    "event": {
+        "loading": "Loading event...",
+        "failed": "Failed to load event",
+        "notFound": "Event not found",
+        "edit": "Edit Event",
+        "delete": "Delete Event",
+        "book": "Book Ticket",
+        "price": "Price",
+        "availableTickets": "Available Tickets",
+        "capacity": "Capacity",
+        "category": "Category"
+    }
+}

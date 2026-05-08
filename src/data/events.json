@@ -1,0 +1,131 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": {
+        "en": "Summer Music Festival 2025",
+        "ar": "مهرجان الموسيقى الصيفي 2025"
+      },
+      "description": {
+        "en": "Experience the biggest summer festival with top artists, food trucks, and unforgettable vibes. Multiple stages featuring electronic, pop, and rock music.",
+        "ar": "استمتع بأكبر مهرجان صيفي مع أفضل الفنانين وعربات الطعام وأجواء لا تُنسى. يضم عدة مسارح تقدم الموسيقى الإلكترونية والبوب والروك."
+      },
+      "date": "2025-07-15",
+      "time": "14:00",
+      "location": {
+        "en": "Central Park, New York",
+        "ar": "سنترال بارك، نيويورك"
+      },
+      "price": 89.99,
+      "capacity": 5000,
+      "availableTickets": 4998,
+      "category": {
+        "en": "Music",
+        "ar": "موسيقى"
+      },
+      "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1200"
+    },
+    {
+      "id": "4",
+      "title": {
+        "en": "Food & Wine Expo",
+        "ar": "معرض الطعام والنبيذ"
+      },
+      "description": {
+        "en": "Sample cuisine from 50+ restaurants and taste wines from around the world. Cooking demonstrations from celebrity chefs.",
+        "ar": "تذوق أطباق من أكثر من 50 مطعمًا وتجربة أنواع النبيذ من جميع أنحاء العالم مع عروض طبخ يقدمها طهاة مشاهير."
+      },
+      "date": "2025-08-05",
+      "time": "12:00",
+      "location": {
+        "en": "Exhibition Hall, Chicago",
+        "ar": "قاعة المعارض، شيكاغو"
+      },
+      "price": 65,
+      "capacity": 8000,
+      "availableTickets": 8000,
+      "category": {
+        "en": "Food & Drink",
+        "ar": "طعام ومشروبات"
+      },
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200"
+    },
+    {
+      "id": "5",
+      "title": {
+        "en": "Marathon for Charity",
+        "ar": "ماراثون خيري"
+      },
+      "description": {
+        "en": "Run for a cause! 5K, 10K, and half-marathon options. All proceeds go to Children's Hospital.",
+        "ar": "اركض من أجل قضية خيرية! تتوفر سباقات 5 كم و10 كم ونصف ماراثون. جميع العائدات تذهب إلى مستشفى الأطفال."
+      },
+      "date": "2025-10-12",
+      "time": "07:00",
+      "location": {
+        "en": "Downtown, Boston",
+        "ar": "وسط المدينة، بوسطن"
+      },
+      "price": 35,
+      "capacity": 10000,
+      "availableTickets": 10000,
+      "category": {
+        "en": "Sports",
+        "ar": "رياضة"
+      },
+      "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1200"
+    },
+    {
+      "id": "6",
+      "title": {
+        "en": "Electronic Music Night",
+        "ar": "ليلة الموسيقى الإلكترونية"
+      },
+      "description": {
+        "en": "DJ sets from top electronic artists. Light show, lasers, and immersive visual experience.",
+        "ar": "عروض دي جي من أفضل الفنانين الإلكترونيين مع عروض إضاءة وليزر وتجربة بصرية غامرة."
+      },
+      "date": "2025-07-28",
+      "time": "22:00",
+      "location": {
+        "en": "Warehouse District, Miami",
+        "ar": "منطقة المستودعات، ميامي"
+      },
+      "price": 45,
+      "capacity": 1500,
+      "availableTickets": 1500,
+      "category": {
+        "en": "Music",
+        "ar": "موسيقى"
+      },
+      "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200"
+    }
+  ],
+  "tickets": [
+    {
+      "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
+      "userEmail": "khalifahussien08@gmail.com",
+      "eventId": "1",
+      "paymentStatus": "paid",
+      "createdAt": "2026-05-08T10:25:33.620Z",
+      "id": "Wp13XoEuNj0"
+    },
+    {
+      "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
+      "userEmail": "khalifahussien08@gmail.com",
+      "eventId": "1",
+      "paymentStatus": "paid",
+      "createdAt": "2026-05-08T10:25:51.388Z",
+      "id": "iU8VqNvP3rQ"
+    },
+    {
+      "userId": "user_3DPD5zsWr6NKLV9CMWpqzCLrySB",
+      "userEmail": "khalifahussien08@gmail.com",
+      "eventId": null,
+      "paymentStatus": "paid",
+      "createdAt": "2026-05-08T16:29:24.547Z",
+      "id": "_HhuUKMZyL0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
